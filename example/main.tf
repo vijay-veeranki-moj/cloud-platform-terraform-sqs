@@ -24,7 +24,7 @@ module "example_sqs" {
 resource "kubernetes_secret" "example_sqs" {
   metadata {
     name      = "example-sqs"
-    namespace = "default"
+    namespace = "example-team"
   }
 
   data {
