@@ -47,7 +47,7 @@ data "aws_iam_policy_document" "policy" {
     ]
 
     resources = [
-      "arn:aws:sqs:::${aws_sqs_queue.terraform_queue.id}",
+      "${aws_sqs_queue.terraform_queue.arn}",
     ]
   }
 }
